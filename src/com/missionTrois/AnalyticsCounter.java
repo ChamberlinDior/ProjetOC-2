@@ -11,7 +11,7 @@ import java.util.List;
 import java.util.Map;
 public class AnalyticsCounter {
 
-    public static String filepath = "symptom.txt";
+    public static String filepath = "symptoms.txt";
     public static String outputFilepath = "result.out";
 
     public static void main(String args[]) throws Exception {

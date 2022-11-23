@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3407dbfa-0404-4fd9-b53a-71089194d689" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Mission3.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/missionTrois/interfaces/ISymptomReader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/missionTrois/interfaces/ISymptomWriter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/missionTrois/interfaces/ISymptomsCompute.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/symptoms.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/missionTrois/AnalyticsCounter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/missionTrois/AnalyticsCounter.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
