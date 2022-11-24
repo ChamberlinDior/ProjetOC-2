@@ -15,7 +15,7 @@ public class AnalyticsCounter {
     public static String outputFilepath = "result.out";
 
     public static void main(String args[]) throws Exception {
-
+              //objet ayant pour objectif de lire placer dans une liste
         System.out.println("Load symptom file");
         ISymptomReader reader = new ReadSymptomDataFromFile(filepath);
         List<String> symptomList = reader.getSymptoms();

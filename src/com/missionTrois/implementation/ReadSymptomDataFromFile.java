@@ -12,7 +12,9 @@ import java.util.List;
  * Simple brute force implementation
  */
 public class ReadSymptomDataFromFile implements ISymptomReader {
-
+    /**
+     * this variable give the way of the file
+     */
     private String filepath;
 
     /**
@@ -23,7 +25,7 @@ public class ReadSymptomDataFromFile implements ISymptomReader {
             throw new IllegalAccessException("Filepath cannot be null or blank");
         }
 
-        this.filepath = filepath;
+        this.filepath = filepath;//attribute the name filepath
     }
 
     @Override
@@ -33,7 +35,7 @@ public class ReadSymptomDataFromFile implements ISymptomReader {
         try {
             BufferedReader reader = new BufferedReader(new FileReader(filepath));
             String line = reader.readLine();
-
+             //Utilisation de la boucle while pour lire le fichier
             while (line != null) {
                 result.add(line);
                 line = reader.readLine();
@@ -41,14 +43,11 @@ public class ReadSymptomDataFromFile implements ISymptomReader {
 
             reader.close();
         } catch (IOException e) {
-            e.printStackTrace();
+            e.printStackTrace();// utilisation de l'exception
         }
         return result;
     }
 
-    @Override
-    public String readLine() {
-        return null;
-    }
+
 
 }

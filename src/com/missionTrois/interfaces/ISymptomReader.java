@@ -18,5 +18,5 @@ public interface ISymptomReader {
 	 */
 	List<String> getSymptoms();
 
-	String readLine();
+
 }
