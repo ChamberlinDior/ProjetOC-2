@@ -23,7 +23,7 @@ public class SymptomsWriterToFile implements ISymptomWriter {
                 System.out.println(v);
                 writer.write( v + "\n");
             } catch (IOException e) {
-                throw new RuntimeException(e);
+                throw new RuntimeException(e);//utilisation de l'exception
             }
         });
 
