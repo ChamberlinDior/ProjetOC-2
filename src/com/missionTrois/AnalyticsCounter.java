@@ -21,11 +21,11 @@ public class AnalyticsCounter {
         List<String> symptomList = reader.getSymptoms();
          //objet servant à compter le nombre de fois qu'un symptoms apparait
         System.out.println("Compute symptom");
-        ISymptomsCompute compute = new SymptomsCompute();
+        ISymptomsCompute compute = new SymptomsCompute();// instense de la classe IsymptomsCompute
         Map<String, Integer> symptomMap = compute.getMapFromList(symptomList);
-         //
+
         System.out.println("Write symptoms");
-        ISymptomWriter writer = new SymptomsWriterToFile(outputFilepath);
+        ISymptomWriter writer = new SymptomsWriterToFile(outputFilepath);//instense de la classe abstract ISymptomWriter
         writer.write(symptomMap);
 
     }
