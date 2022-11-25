@@ -16,7 +16,7 @@ public class SymptomsWriterToFile implements ISymptomWriter {
 
     public void write(Map<String, Integer> map) throws IOException {
         FileWriter writer = new FileWriter(outputFilepath);
-
+       // utilisation de la boucle forEach pour écrire les symptoms dans le fichier de sortie dans l'odre alphabetique
         map.forEach((key, value) -> {
             try {
                 String v = key + " : " +  value;
