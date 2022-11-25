@@ -10,7 +10,7 @@ public class SymptomsCompute implements ISymptomsCompute {
      // COMPTER les symptoms et filtrer les doublons
     public Map<String, Integer> getMapFromList(List<String> symptomList) {
         Map<String, Integer> symptomMap = new TreeMap<>();
-        for (String symptom : symptomList) {  //utilisation de la boucle 'for'
+        for (String symptom : symptomList) {  //utilisation de la boucle 'for' afin de compter les symptoms
             Integer currentValue = symptomMap.containsKey(symptom)
                     ? symptomMap.get(symptom) + 1
                     : 1;
