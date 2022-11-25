@@ -19,11 +19,11 @@ public class AnalyticsCounter {
         System.out.println("Load symptom file");
         ISymptomReader reader = new ReadSymptomDataFromFile(filepath);
         List<String> symptomList = reader.getSymptoms();
-         //objet servant à comptr
+         //objet servant à compter le nombre de fois qu'un symptoms apparait
         System.out.println("Compute symptom");
         ISymptomsCompute compute = new SymptomsCompute();
         Map<String, Integer> symptomMap = compute.getMapFromList(symptomList);
-
+         //
         System.out.println("Write symptoms");
         ISymptomWriter writer = new SymptomsWriterToFile(outputFilepath);
         writer.write(symptomMap);
