@@ -8,10 +8,10 @@ import java.util.TreeMap;
 
 public class SymptomsCompute implements ISymptomsCompute {
      // COMPTER les symptoms et filtrer les doublons
-    public Map<String, Integer> getMapFromList(List<String> symptomList) {
-        Map<String, Integer> symptomMap = new TreeMap<>();
-        for (String symptom : symptomList) {  //utilisation de la boucle 'for' afin de compter les symptoms
-            Integer currentValue = symptomMap.containsKey(symptom)
+    public Map<String, Integer> getMapFromList(List<String> symptomList) {// prend une liste en entré et en ressort une Map
+        Map<String, Integer> symptomMap = new TreeMap<>();//permet d'ordonner alphabetiquement
+        for (String symptom : symptomList) {
+            Integer currentValue = symptomMap.containsKey(symptom)// permet de compter les symptoms
                     ? symptomMap.get(symptom) + 1
                     : 1;
 
