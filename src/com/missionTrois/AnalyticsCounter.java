@@ -10,12 +10,12 @@ import com.missionTrois.interfaces.ISymptomsCompute;
 import java.util.List;
 import java.util.Map;
 public class AnalyticsCounter {
-        // champs contenant les données
+        // declarations des variables
     public static String filepath = "symptoms.txt";
     public static String outputFilepath = "result.out";
 
     public static void main(String args[]) throws Exception {
-              //objet ayant pour objectif de lire le fichier  placer dans une liste
+              //objet ayant pour objectif de lire le fichier  placé  dans une liste
         System.out.println("Load symptom file");
         ISymptomReader reader = new ReadSymptomDataFromFile(filepath);
         List<String> symptomList = reader.getSymptoms();

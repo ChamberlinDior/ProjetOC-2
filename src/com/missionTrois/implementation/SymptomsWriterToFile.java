@@ -14,21 +14,21 @@ public class SymptomsWriterToFile implements ISymptomWriter {
         this.outputFilepath = outputFilepath;
     }
 
-    public void write(Map<String, Integer> map) throws IOException { //methode avec parametres
-        FileWriter writer = new FileWriter(outputFilepath);
-       // utilisation de la boucle forEach pour écrire les symptoms dans le fichier de sortie dans l'odre alphabetique
+    public void write(Map<String, Integer> map) throws IOException {
+        FileWriter writer = new FileWriter(outputFilepath);// ouvrir le fichier afin de pourvoir y écrire les symptoms
+
         map.forEach((key, value) -> {
             try {
-                String v = key + " : " +  value;
+                String v = key + " : " +  value; //
                 System.out.println(v);
-                writer.write( v + "\n");
+                writer.write( v + "\n"); // cela permet dans le fichier
             } catch (IOException e) {
                 throw new RuntimeException(e);//utilisation de l'exception
             }
         });
 
         System.out.println();
-        writer.close();
+        writer.close(); // fermer le fichier
     }
 }
 
