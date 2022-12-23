@@ -25,23 +25,23 @@ public class ReadSymptomDataFromFile implements ISymptomReader {
             throw new IllegalAccessException("Filepath cannot be null or blank");
         }
 
-        this.filepath = filepath;//attribute the name filepath
+        this.filepath = filepath;
     }
 
     @Override
     public List<String> getSymptoms() {
-        List<String> result = new ArrayList<>();
+        List<String> result = new ArrayList<>();// declaration d'une  liste
 
         try {
-            BufferedReader reader = new BufferedReader(new FileReader(filepath));
-            String line = reader.readLine();
-             //Utilisation de la boucle while pour lire le fichier
-            while (line != null) {
+            BufferedReader reader = new BufferedReader(new FileReader(filepath));// permettant d'ouvrir un fichier
+            String line = reader.readLine(); // methode permettant de recuperer  la premiere ligne du fichier
+             //Utilisation de la boucle while pour recuperer les lignes du fichier
+            while (line != null) { //tant qu'il y'a des ligne , on les recuperer
                 result.add(line);
                 line = reader.readLine();
             }
 
-            reader.close();
+            reader.close(); //fermiture du fichier
         } catch (IOException e) {
             e.printStackTrace();// utilisation de l'exception
         }
