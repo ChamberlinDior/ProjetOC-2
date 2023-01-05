@@ -10,7 +10,7 @@ import com.missionTrois.interfaces.ISymptomsCompute;
 import java.util.List;
 import java.util.Map;
 public class AnalyticsCounter {
-        // declarations des variables
+        // declarations des attributs
     public static String filepath = "symptoms.txt";
     public static String outputFilepath = "result.out";
 
